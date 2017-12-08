@@ -1,4 +1,4 @@
-# Bilderber Starter Pack
+# Bilderberg Starter Pack
 
 This repository has everything I need to start a project.
 
