@@ -1,0 +1,32 @@
+{
+    "name": "bilderberg-starter-pack",
+    "version": "0.0.1",
+    "description": "New project boilerplate",
+    "main": "dist/index.js",
+    "scripts": {
+        "test": "browserify test/*.ts -p [tsify] | tape-run | tap-spec"
+    },
+    "repository": "git+https://github.com/bilderberg-the-man/starter-pack.git",
+    "author": "bilderberg <bilderberg@fuckjava.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/bilderberg-the-man/starter-pack/issues"
+    },
+    "homepage": "https://github.com/bilderberg-the-man/starter-pack#readme",
+    "dependencies": {},
+    "devDependencies": {
+        "@types/tape": "^4.2.31",
+        "browserify": "^14.5.0",
+        "pre-commit": "^1.2.2",
+        "tap-spec": "^4.1.1",
+        "tape": "^4.8.0",
+        "tape-run": "^3.0.1",
+        "tsify": "^3.0.4",
+        "tslint": "^5.8.0",
+        "tslint-config-standard": "^7.0.0",
+        "typescript": "^2.6.2"
+    },
+    "pre-commit": [
+        "test"
+    ]
+}
