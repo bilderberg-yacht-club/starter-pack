@@ -4,7 +4,8 @@
     "description": "New project boilerplate",
     "main": "dist/index.js",
     "scripts": {
-        "test": "browserify test/*.ts -p [tsify] | tape-run | tap-spec"
+        "test": "browserify test/*.ts -p [tsify] | tape-run | tap-spec",
+        "lint": "tslint --project tslint.json './src/**/*.ts'"
     },
     "repository": "git+https://github.com/bilderberg-the-man/starter-pack.git",
     "author": "bilderberg <bilderberg@fuckjava.com>",
@@ -27,6 +28,7 @@
         "typescript": "^2.6.2"
     },
     "pre-commit": [
-        "test"
+        "test",
+        "lint"
     ]
 }
